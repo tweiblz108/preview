@@ -1,0 +1,600 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Form Template</title></head><body><!-- 基本的样式 --><style data-style-basic>div[data-contents] {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+[data-anchor="video-container"]>iframe {
+  width: 100%;
+}</style><!-- 这里的样式会被编辑器替换，用于改变每一个 input 框内的 placeholder 的颜色 --><style data-style-placeholder>input[name="6298ac92-0d2a-4d2e-b908-7a294414bab1"]::placeholder {
+  color: blue;
+}</style><!-- Current Template Styles--><style template-style>blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: inherit;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.engage-wrapper {
+  max-width: 810px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.engage-background-bottom {
+  background-color: rgb(33 47 79 / 70%);
+  width: 100%;
+}
+
+.engage-image {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -60px 30px -60px -60px;
+  max-width: 290px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+
+.engage-image img {
+  max-width: 100%;
+}
+
+.engage-presented-by {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.engage-name {
+  margin-top: 10px;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.engage-datetime {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 15px 28px;
+}
+
+.engage-datetime-date {
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.engage-datetime-time {
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.engage-svg {
+  width: 16px;
+  margin-right: 15px;
+  opacity: 0.8;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.engage-form-title {
+  font-family: PT Sans, sans-serif;
+  letter-spacing: 1.2px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.engage-background-column {
+  background-size: cover;
+  background-image: url('./images/landingPage-3-background.png');
+}
+
+.engage-column {
+  width: 55%;
+  padding: 80px;
+  position: relative;
+}
+
+.engage-preheader {
+  color: #51b090;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1.2;
+  -moz-letter-spacing: 1.2;
+  -ms-letter-spacing: 1.2;
+  letter-spacing: 1.2;
+  position: relative;
+}
+
+.engage-preheader::before {
+  content: "";
+  height: 2px;
+  width: 25px;
+  background: #e3e3e3;
+  background: #51b090;
+  position: absolute;
+  top: 5px;
+  left: -55px;
+}
+
+.engage-preheader h1 {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+.engage-form-description {
+  overflow-wrap: break-word;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+
+.engage-form-description p {
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.engage-header {
+  margin: 40px 0 0 0;
+}
+
+.engage-header h2 {
+  color: #ffffff;
+  font-size: 41px;
+  font-weight: 700;
+  font-family: "Domine", serif;
+}
+
+.engage-card {
+  background-color: rgb(251, 105, 112);
+  border-radius: 8px;
+  width: 100%;
+  padding: 30px;
+  margin: 100px 0 50px 0;
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.engage-sub-header p {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.engage-hr {
+  border: 1px solid #f3f3f3;
+  margin: 40px 0;
+  max-width: 80%;
+}
+
+.engage-text-title {
+  color: #111111;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.engage-text-title h1 {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+.engage-text-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.engage-text-content {
+  overflow-wrap: break-word;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.65;
+  margin-bottom: 30px;
+}
+
+
+.engage-ul {
+  margin: 0;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.engage-fields {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-bottom: 0;
+}
+
+.engage-field-wrapper {
+  width: 100%;
+}
+
+.engage-check-wrapper {
+  margin-bottom: 10px;
+}
+
+.engage-field {
+  margin-bottom: 10px;
+  user-select: none;
+  position: relative;
+  -webkit-tap-highlight-color: #000000;
+  touch-action: manipulation;
+}
+
+.engage-border-wrapper {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.engage-input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  padding: 12px;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  margin: 0;
+  width: 100%;
+  color: #ffffff;
+  border-color: #ffffff;
+  font-weight: 400;
+}
+
+.engage-submit {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 34px 0 rgb(51 51 51 / 15%);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.1;
+  margin: 0 0 15px 0;
+  -moz-letter-spacing: 1.1;
+  -ms-letter-spacing: 1.1;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-letter-spacing: 1.1;
+  width: 100%;
+}
+
+.engage-submit a {
+  color: #fb6970;
+  display: block;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 16px 12px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.engage-submit a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.engage-disclaimer {
+  color: #ffffff;
+  font-size: 12px;
+  max-width: 100%;
+}
+
+.engage-powered-by-engage-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+}
+
+.engage-powered-by-engage-container:hover {
+  transform: scale(1.025) perspective(1px);
+  opacity: 1;
+}
+
+
+.engage-powered-by-engage {
+  background-color: transparent;
+  border-color: transparent;
+  align-items: center;
+  border-radius: 4px;
+  color: #373f45;
+  cursor: pointer;
+  display: block;
+  opacity: 0.95;
+  padding: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-indent: 100%;
+  -webkit-transition: ease-in-out all 200ms;
+  transition: ease-in-out all 200ms;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.engage-logo {
+  width: 150px;
+  float: left;
+}
+
+.engage-add {
+  width: 100%;
+}
+
+.engage-custom-fields {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+}
+
+.engage-flex {
+  display: flex;
+  align-items: center;
+}
+
+.engage-flex-auto {
+  flex: 1 1 auto;
+  border-bottom: 1px solid #d2d8dd;
+}
+
+.engage-form-add {
+  color: #d2d8dd;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #d2d8dd;
+  margin: 0 10px;
+}
+
+.engage-form-add:hover {
+  color: #697177;
+  border-color: #697177;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.engage-select-wrapper {
+  border: none;
+}
+
+.engage-select-wrapper::before {
+  content: "";
+  top: calc(50% - 2.5px);
+  right: 10px;
+  position: absolute;
+  pointer-events: none;
+  border-color: #4f4f4f transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  height: 0;
+  width: 0;
+}
+
+.engage-select {
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-weight: 400;
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+  line-height: 1.4;
+  margin-bottom: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 15px;
+  padding: 12px;
+  padding-right: 25px;
+  border: 1px solid #ffffff;
+  background: 0 !important;
+}
+
+.engage-legend {
+  border: none;
+  padding: 0;
+  position: relative;
+  display: table;
+  font-size: 14px;
+}
+
+.engage-checkbox-input {
+  display: none;
+  cursor: pointer;
+  margin: 4px 0 0;
+}
+
+.engage-checkbox-input:checked+label::before {
+  background: #10bf7a;
+  border-color: #10bf7a;
+}
+
+.engage-checkbox-input:checked+label::after {
+  content: "";
+  height: 4px;
+  width: 8px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+.engage-checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
+  margin: 15px 0;
+  cursor: pointer;
+  max-width: 100%;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.engage-checkbox-label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #b2b2b2;
+  background: #ffffff;
+  left: 0px;
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+@media only screen and (max-width:700px) {
+  .engage-image {
+    max-width: 70% !important;
+    margin: 0 auto 20px auto !important;
+  }
+
+  .engage-fields {
+    width: 100% !important;
+  }
+
+  .engage-card {
+    padding: 20px !important;
+    margin-top: 50px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+}</style><div data-contents><div class="engage-page"><div class="engage-background-column mt-comp-group mt-comp-group-bg"><div class="engage-background-bottom"><div class="engage-wrapper"><div class="engage-powered-by-engage-container mt-comp-group mt-comp mt-comp-image"><a href="https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form" class="engage-powered-by-engage" target="_blank" rel="noopener noreferrer"><img class="engage-logo" src="./images/landingPage-3-logo-top.png" alt=""></a></div><div class="engage-header mt-comp mt-comp-text"><h2 class="mt-comp-text-content">Design for Non-Designers</h2></div><div class="engage-card"><div class="engage-image mt-comp mt-comp-image"><img src="./images/landingPage-3-main.png"></div><div class="engage-fields"><div class="engage-sub-header mt-comp mt-comp-text"><p class="mt-comp-text-content">DOWNLOAD THE GUIDE</p></div><div class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="First Name" data-field-label="First Name" data-field-name="first_name" data-field-id="3" data-input-name="first_name" data-is-custom-field="false" data-font-color="#ffffff" data-border-color="#ffffff"><input class="engage-input" name="first_name" placeholder="First Name" type="text"></div></div><div class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Email address" data-field-label="Email" data-field-name="email" data-field-id="1" data-input-name="email" data-is-custom-field="false" data-font-color="#ffffff" data-border-color="#ffffff"><input class="engage-input" name="email" placeholder="Email address" type="text"></div></div><div hidden data-anchor="add-component" class="engage-add"><div class="engage-custom-fields"><div class="engage-flex"><div class="engage-flex-auto"></div><div class="engage-form-add">+</div><div class="engage-flex-auto"></div></div></div></div><div class="engage-submit mt-comp mt-comp-button" data-anchor="submit"><a href="">SUBSCRIBE</a></div><div class="engage-disclaimer mt-comp-group mt-comp mt-comp-text">We respect your privacy. Unsubscribe at anytime.</div></div></div><div class="engage-text-content-wrapper"><div class="engage-text-content mt-comp mt-comp-text"><p class="mt-comp-text-content">These days you don't need years of coding experience or background in graphic design to make your business look good. This guide is dedicated to helping all bloggers find confidence to think and create like a design pro.</p></div><div class="engage-title-inner-wrapper mt-comp mt-comp-text"><strong class="mt-comp-text-content">You'll learn about:</strong></div><div class="engage-text-content mt-comp mt-comp-text"><div class="mt-comp-text-content">Typography<br>Color theory<br>Kerning</div></div></div><div class="engage-powered-by-engage-container mt-comp mt-comp-image"><a href="https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form" class="engage-powered-by-engage" target="_blank" rel="noopener noreferrer"><img class="engage-logo" src="./images/landingPage-3-logo.png" alt=""></a></div></div></div></div></div><!-- 以下是隐藏的组件模版  --><div hidden data-templates><!-- Checkbox 组件的选项 --><div data-template-type="component-checkbox-option"><input class="engage-checkbox-input" type="checkbox" name="" id=""> <label class="engage-checkbox-label" for="" data-placeholder-option></label></div><!-- Dropdown 组件的选项 --><option value="First choice" data-anchor="option" data-template-type="component-dropdown-option" data-placeholder-option></option><!-- 一般的带图标的 Link 组件 --><div data-template-type="component-link" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="" data-url=""><img data-anchor="icon" src="" alt=""><div data-anchor="title"></div></div></div><!-- 不带图标的 Link 组件 --><div data-template-type="component-link-without-icon" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="https://" data-url=""><div data-anchor="title">https://</div></div></div><!-- Input 组件 --><div class="mt-comp-group mt-comp-group-x engage-field-wrapper" data-template-type="component-input"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Untitled" data-field-label="" data-field-name="" data-field-id="" data-input-name="" data-is-custom-field="true" data-font-color="#ffffff" data-border-color="#ffffff"><input class="engage-input" name="" placeholder="Untitled" type="text"></div></div><!-- Dropdown 组件 --><div class="mt-comp-group mt-comp-group-x engage-field-wrapper" data-template-type="component-dropdown"><div class="engage-field engage-select-wrapper mt-comp-x mt-comp-dropdown" data-title="Select a choice" data-field-name="08b8c75b-e033-45cb-9773-d6479e50d849" data-field-label="anchor" data-field-id="55" data-is-custom-field="true" data-options='[["First choice", "ddd"], ["Second choice", "bar"], ["Third choice", "foo"]]' data-font-color="#ffffff" data-border-color="#ffffff"><select name="08b8c75b-e033-45cb-9773-d6479e50d849" class="engage-border-wrapper engage-select"><option value="" selected="" disabled="" hidden="" data-anchor="title">Select a choice</option></select></div></div><!-- Checkbox 组件 --><div class="mt-comp-group mt-comp-group-x engage-field-wrapper engage-check-wrapper" data-template-type="component-checkbox"><div class="mt-comp-x mt-comp-checkbox" data-title="Check all that apply" data-input-name="" data-options='[["First choice", "0", ""], ["Second choice", "0", ""], ["Third choice", "0", ""]]' data-font-color="#ffffff" data-border-color="#ffffff"><div data-anchor="title" class="engage-legend">Check all that apply</div><div data-anchor="options"></div></div></div></div></div></body></html>

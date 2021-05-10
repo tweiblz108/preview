@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Form Template</title></head><body><!-- 基本的样式 --><style data-style-basic>div[data-contents] {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+[data-anchor="video-container"]>iframe {
+  width: 100%;
+}</style><!-- 这里的样式会被编辑器替换，用于改变每一个 input 框内的 placeholder 的颜色 --><style data-style-placeholder>input[name="6298ac92-0d2a-4d2e-b908-7a294414bab1"]::placeholder {
+  color: blue;
+}</style><!-- Current Template Styles--><style template-style>blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: inherit;
+}
+
+* {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input::placeholder {
+  color: #697177;
+}
+
+.engage-wrapper {
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #697177;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+}
+
+.engage-background-column {
+  width: 44%;
+  margin-left: 0;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  padding: 20px;
+}
+
+.engage-background {
+  background-image: url('./images/form-4-main.png');
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.engage-background-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.engage-column {
+  width: 57%;
+  padding: 55px 60px 55px 45px;
+  position: relative;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.engage-header {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.engage-header h2 {
+  line-height: 1.2;
+  color: #373f45;
+  font-weight: 700;
+  font-size: 36px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.engage-sub-header {
+  margin-bottom: 45px;
+}
+
+.engage-sub-header p {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: #697177;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.engage-fields {}
+
+.engage-field {
+  margin: 0 0 8px 0;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+
+.engage-border-wrapper {
+  border: 1px solid #f3f6f9;
+  border-radius: 5px;
+}
+
+.engage-input {
+  border: none;
+  padding: 14px 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  margin: 0;
+  -webkit-transition: border-color ease-out 300ms;
+  transition: border-color ease-out 300ms;
+  color: #697177;
+  background-color: #f3f6f9;
+  font-weight: 400;
+  font-size: 14px;
+  text-indent: 12px;
+  width: 100%;
+}
+
+.engage-submit {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #785edf;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 100%;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.engage-submit a {
+  color: #FFFFFF;
+  display: block;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 15px 14px;
+  text-decoration: none;
+}
+
+.engage-submit a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.engage-disclaimer {
+  color: #697177;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 15px;
+}
+
+.engage-powered-by-engage-container {
+  margin-bottom: 0;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.engage-powered-by-engage-container:hover {
+  transform: scale(1.025) perspective(1px);
+  opacity: 1;
+}
+
+.engage-powered-by-engage {
+  background-color: transparent;
+  border-color: transparent;
+  align-items: center;
+  border-radius: 4px;
+  color: #373f45;
+  cursor: pointer;
+  display: block;
+  opacity: 0.95;
+  padding: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-indent: 100%;
+  -webkit-transition: ease-in-out all 200ms;
+  transition: ease-in-out all 200ms;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.engage-logo {
+  width: 170px;
+  height: 37px;
+  float: left;
+}
+
+.engage-custom-fields {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.engage-flex {
+  display: flex;
+  align-items: center;
+}
+
+.engage-flex-auto {
+  flex: 1 1 auto;
+  border-bottom: 1px solid #d2d8dd;
+}
+
+.engage-form-add {
+  color: #d2d8dd;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #d2d8dd;
+  margin: 0 10px;
+}
+
+.engage-form-add:hover {
+  color: #697177;
+  border-color: #697177;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.engage-select-group {
+  margin-bottom: 10px;
+}
+
+.engage-select-wrapper {
+  border: none;
+}
+
+.engage-select-wrapper::before {
+  content: "";
+  top: calc(50% - 2.5px);
+  right: 10px;
+  position: absolute;
+  pointer-events: none;
+  border-color: #4f4f4f transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  height: 0;
+  width: 0;
+}
+
+.engage-select {
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+  color: #697177;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  text-indent: 12px;
+  font-weight: 400;
+  padding: 14px 0;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  margin: 0;
+  -webkit-transition: border-color ease-out 300ms;
+  transition: border-color ease-out 300ms;
+  background-color: #f3f6f9;
+  border-radius: 5px;
+}
+
+.engage-legend {
+  border: none;
+  padding: 0;
+  position: relative;
+  display: table;
+}
+
+.engage-checkbox-input {
+  display: none;
+  cursor: pointer;
+  margin: 4px 0 0;
+}
+
+.engage-checkbox-input:checked+label::before {
+  background: #10bf7a;
+  border-color: #10bf7a;
+}
+
+.engage-checkbox-input:checked+label::after {
+  content: "";
+  height: 4px;
+  width: 8px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+.engage-checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
+  margin: 15px 0;
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.engage-checkbox-label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #e3e3e3;
+  background: #ffffff;
+  left: 0px;
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+@media only screen and (max-width:600px) {
+  .engage-wrapper {
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+
+  .engage-background {
+  }
+
+  .engage-background-column {
+    width: auto !important;
+    padding: 0 !important;
+    height: 280px !important;
+    margin: 20px;
+    -webkit-order: 1 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+  }
+
+  .engage-column {
+    width: auto !important;
+    -webkit-order: 2 !important;
+    -ms-flex-order: 2 !important;
+    order: 2 !important;
+    padding: 20px;
+  }
+  
+}</style><div data-contents><div class="engage-wrapper"><div class="engage-background-column mt-comp-group"><div class="engage-background mt-comp-group mt-comp-group-bg"></div></div><div class="engage-column"><div class="engage-background-inner-wrapper"><div class="engage-header mt-comp mt-comp-text"><h2 class="mt-comp-text-content">Learn how to take photos like a pro</h2></div><div class="engage-sub-header mt-comp mt-comp-text"><p class="mt-comp-text-content">I’ll send you a simple guide that will boost your photography skills overnight.<br>​<br>​Get the 28-step guide by subscribing below.</p></div></div><div class="engage-fields"><div class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Email Address" data-field-label="Email" data-field-name="email" data-field-id="1" data-input-name="email" data-is-custom-field="false" data-font-color="#697177" data-border-color="#f3f6f9"><input class="engage-input" name="email" placeholder="Email Address" type="text"></div></div><div hidden data-anchor="add-component"><div class="engage-custom-fields"><div class="engage-flex"><div class="engage-flex-auto"></div><div class="engage-form-add">+</div><div class="engage-flex-auto"></div></div></div></div><div class="engage-submit mt-comp mt-comp-button" data-anchor="submit"><a href="">Download</a></div></div><div class="engage-disclaimer mt-comp-group mt-comp mt-comp-text">We respect your privacy. Unsubscribe at anytime.</div><div class="engage-powered-by-engage-container mt-comp-group mt-comp mt-comp-image"><a href="https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form" class="engage-powered-by-engage" target="_blank" rel="noopener noreferrer"><img class="engage-logo" src="./images/form-4-logo.png" alt=""></a></div></div></div></div><!-- 以下是隐藏的组件模版  --><div hidden data-templates><!-- Checkbox 组件的选项 --><div data-template-type="component-checkbox-option"><input class="engage-checkbox-input" type="checkbox" name="" id=""> <label class="engage-checkbox-label" for="" data-placeholder-option></label></div><!-- Dropdown 组件的选项 --><option value="First choice" data-anchor="option" data-template-type="component-dropdown-option" data-placeholder-option></option><!-- 一般的带图标的 Link 组件 --><div data-template-type="component-link" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="" data-url=""><img data-anchor="icon" src="" alt=""><div data-anchor="title"></div></div></div><!-- 不带图标的 Link 组件 --><div data-template-type="component-link-without-icon" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="https://" data-url=""><div data-anchor="title">https://</div></div></div><!-- Input 组件 --><div class="mt-comp-group mt-comp-group-x" data-template-type="component-input"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Untitled" data-field-label="" data-field-name="" data-field-id="" data-input-name="" data-is-custom-field="true" data-font-color="#697177" data-border-color="#f3f6f9"><input class="engage-input" name="" placeholder="Untitled" type="text"></div></div><!-- Dropdown 组件 --><div class="mt-comp-group mt-comp-group-x" data-template-type="component-dropdown"><div class="engage-field engage-select-wrapper mt-comp-x mt-comp-dropdown" data-title="Select a choice" data-field-name="08b8c75b-e033-45cb-9773-d6479e50d849" data-field-label="anchor" data-field-id="55" data-is-custom-field="true" data-options='[["First choice", "ddd"], ["Second choice", "bar"], ["Third choice", "foo"]]' data-font-color="#697177" data-border-color="#f3f6f9"><select name="08b8c75b-e033-45cb-9773-d6479e50d849" class="engage-border-wrapper engage-select"><option value="" selected="" disabled="" hidden="" data-anchor="title">Select a choice</option></select></div></div><!-- Checkbox 组件 --><div class="mt-comp-group mt-comp-group-x engage-select-group" data-template-type="component-checkbox"><div class="mt-comp-x mt-comp-checkbox" data-title="Check all that apply" data-input-name="" data-options='[["First choice", "0", ""], ["Second choice", "0", ""], ["Third choice", "0", ""]]' data-font-color="#697177" data-border-color="#f3f6f9"><div data-anchor="title" class="engage-legend">Check all that apply</div><div data-anchor="options"></div></div></div></div></body></html>

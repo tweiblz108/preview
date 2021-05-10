@@ -1,0 +1,641 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Form Template</title></head><body><!-- 基本的样式 --><style data-style-basic>div[data-contents] {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+[data-anchor="video-container"]>iframe {
+  width: 100%;
+}</style><!-- 这里的样式会被编辑器替换，用于改变每一个 input 框内的 placeholder 的颜色 --><style data-style-placeholder>input[name="6298ac92-0d2a-4d2e-b908-7a294414bab1"]::placeholder {
+  color: blue;
+}</style><!-- Current Template Styles--><style template-style>blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: inherit;
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #000000;
+  ;
+}
+
+.engage-wrapper {
+  min-height: 100vh;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.engage-background-bottom {
+  background-color: rgb(17 43 72 / 75%);
+  padding: 80px 120px;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+}
+
+.engage-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 2px 34px 0 rgb(51 51 51 / 15%)
+}
+
+.engage-avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.engage-presented-by {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.engage-name {
+  margin-top: 10px;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.engage-datetime {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 15px 28px;
+}
+
+.engage-datetime-date {
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.engage-datetime-time {
+  display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.engage-svg {
+  width: 16px;
+  margin-right: 15px;
+  opacity: 0.8;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.engage-form-title {
+  font-family: PT Sans, sans-serif;
+  letter-spacing: 1.2px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.engage-background-column {
+  width: 45%;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  background-size: cover;
+  background-image: url('./images/landingPage-2-background.png');
+}
+
+.engage-column {
+  width: 55%;
+  padding: 80px;
+  position: relative;
+}
+
+.engage-preheader {
+  color: #51b090;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1.2;
+  -moz-letter-spacing: 1.2;
+  -ms-letter-spacing: 1.2;
+  letter-spacing: 1.2;
+  position: relative;
+}
+
+.engage-preheader::before {
+  content: "";
+  height: 2px;
+  width: 25px;
+  background: #e3e3e3;
+  background: #51b090;
+  position: absolute;
+  top: 5px;
+  left: -55px;
+}
+
+.engage-preheader h1 {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+.engage-form-description {
+  overflow-wrap: break-word;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+
+.engage-form-description p {
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.engage-title-inner-wrapper {
+  max-width: 960px;
+  width: 94%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.engage-header {
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.engage-header h2 {
+  color: rgb(17, 17, 17);
+  font-size: 52px;
+  line-height: 1.1;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+
+.engage-sub-header {
+  max-width: 70%;
+}
+
+.engage-sub-header p {
+  line-height: 1.6;
+  color: #51b090;
+  font-size: 21px;
+}
+
+.engage-hr {
+  border: 1px solid #f3f3f3;
+  margin: 40px 0;
+  max-width: 80%;
+}
+
+.engage-text-title {
+  color: #111111;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.engage-text-title h1 {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit
+}
+
+.engage-text-content-wrapper {
+  max-width: 85%;
+  margin-bottom: 40px;
+  overflow-wrap: break-word;
+  color: #111111;
+  font-size: 18px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.engage-ul {
+  margin: 0;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.engage-fields {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.engage-field-wrapper {
+  width: 80%;
+}
+
+.engage-field {
+  margin: 0 0 10px 0;
+  user-select: none;
+  position: relative;
+  -webkit-tap-highlight-color: #000000;
+  touch-action: manipulation;
+}
+
+.engage-border-wrapper {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.engage-input {
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 2px 34px 0 rgb(51 51 51 / 15%);
+  color: #000000;
+  flex: 1 0 auto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  -ms-flex: 1 0 auto;
+  padding: 16px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-flex: 1 0 auto;
+  width: 100%;
+}
+
+.engage-submit {
+  background-color: #51b090;
+  border-radius: 5px;
+  box-shadow: 0 2px 34px 0 rgb(51 51 51 / 15%);
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.1;
+  margin: 0 0 15px 0;
+  -moz-letter-spacing: 1.1;
+  -ms-letter-spacing: 1.1;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-letter-spacing: 1.1;
+  width: 80%;
+}
+
+.engage-submit a {
+  color: #FFFFFF;
+  display: block;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 16px 12px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.engage-submit a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.engage-disclaimer {
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.6;
+  max-width: 80%;
+}
+
+.engage-powered-by-engage-container {
+  margin: 60px 0 30px 0;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  position: relative;
+}
+
+.engage-powered-by-engage-container:hover {
+  transform: scale(1.025) perspective(1px);
+  opacity: 1;
+}
+
+
+.engage-column::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 99.9%;
+  width: 30px;
+  height: 100%;
+  background: white;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+}
+
+
+.engage-powered-by-engage {
+  background-color: transparent;
+  border-color: transparent;
+  align-items: center;
+  border-radius: 4px;
+  color: #373f45;
+  cursor: pointer;
+  display: block;
+  opacity: 0.95;
+  padding: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-indent: 100%;
+  -webkit-transition: ease-in-out all 200ms;
+  transition: ease-in-out all 200ms;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.engage-logo {
+  width: 170px;
+  height: 37px;
+  float: left;
+}
+
+.engage-add {
+  width: 80%;
+}
+
+.engage-custom-fields {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 1rem auto;
+}
+
+.engage-flex {
+  display: flex;
+  align-items: center;
+}
+
+.engage-flex-auto {
+  flex: 1 1 auto;
+  border-bottom: 1px solid #d2d8dd;
+}
+
+.engage-form-add {
+  color: #d2d8dd;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #d2d8dd;
+  margin: 0 10px;
+}
+
+.engage-form-add:hover {
+  color: #697177;
+  border-color: #697177;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.engage-select-group {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.engage-select-wrapper {
+  border: none;
+}
+
+.engage-select-wrapper::before {
+  content: "";
+  top: calc(50% - 2.5px);
+  right: 10px;
+  position: absolute;
+  pointer-events: none;
+  border-color: #4f4f4f transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  height: 0;
+  width: 0;
+}
+
+.engage-select {
+  appearance: none;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  box-shadow: 0 2px 34px 0 rgb(51 51 51 / 15%);
+  color: #000000;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 1.1;
+  line-height: 1.4;
+  margin-bottom: 0;
+  -moz-appearance: none;
+  -moz-letter-spacing: 1.1;
+  -moz-text-align-last: center;
+  -ms-letter-spacing: 1.1;
+  padding: 16px 12px;
+  text-align: center;
+  text-align-last: center;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -webkit-letter-spacing: 1.1;
+  width: 100%;
+
+}
+
+.engage-legend {
+  border: none;
+  padding: 0;
+  position: relative;
+  display: table;
+  font-size: 18px;
+}
+
+.engage-checkbox-input {
+  display: none;
+  cursor: pointer;
+  margin: 4px 0 0;
+}
+
+.engage-checkbox-input:checked+label::before {
+  background: #10bf7a;
+  border-color: #10bf7a;
+}
+
+.engage-checkbox-input:checked+label::after {
+  content: "";
+  height: 4px;
+  width: 8px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+.engage-checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
+  margin: 15px 0;
+  cursor: pointer;
+  max-width: 100%;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.engage-checkbox-label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #b2b2b2;
+  background: #ffffff;
+  left: 0px;
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+@media only screen and (max-width:700px) {
+  .engage-wrapper {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+
+  .engage-column {
+    width: 100% !important;
+    padding: 60px 40px !important;
+  }
+
+  .engage-background-column {
+    width: 100% !important;
+  }
+
+  .engage-background {
+    padding: 60px 40px !important;
+  }
+
+  .engage-column::after {
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .engage-header h2 {
+    font-size: 44px !important;
+  }
+}</style><div data-contents><div class="engage-page"><div class="engage-wrapper"><div class="engage-background-column mt-comp-group mt-comp-group-bg"><div class="engage-background-bottom"><div class="engage-avatar mt-comp mt-comp-image"><img src="./images/landingPage-2-avatar.png"></div><div class="engage-presented-by mt-comp mt-comp-text"><p class="mt-comp-text-content">PRESENTED BY</p></div><div class="engage-name mt-comp mt-comp-text"><h1 class="mt-comp-text-content">Isa Adney</h1></div><div class="mt-comp-group mt-comp-group-x"><div class="engage-datetime mt-comp-x mt-comp-datetime" data-timestamp="1618991663" data-timezone="America/New_York"><div class="engage-datetime-date"><svg aria-hidden="true" focusable="false" class="engage-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 64h-48V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H128V12c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h352c8.8 0 16 7.2 16 16v48H32v-48c0-8.8 7.2-16 16-16zm352 384H48c-8.8 0-16-7.2-16-16V192h384v272c0 8.8-7.2 16-16 16zM148 320h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 96h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-96 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm192 0h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12z"></path></svg><div data-anchor="date">April 21, 2021</div></div><div class="engage-datetime-time"><svg aria-hidden="true" focusable="false" class="engage-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216zm-148.9 88.3l-81.2-59c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h14c6.6 0 12 5.4 12 12v146.3l70.5 51.3c5.4 3.9 6.5 11.4 2.6 16.8l-8.2 11.3c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg><div data-anchor="time">3:54 PM America/New_York</div></div></div></div><div class="engage-form-title mt-comp mt-comp-text"><h1 class="mt-comp-text-content">Register today</h1></div><div class="engage-form-description mt-comp mt-comp-text"><p class="mt-comp-text-content">Don't miss your chance. Fill out the form below and sign up today.</p></div><div class="mt-comp-group mt-comp-group-x engage-field-wrapper"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Email Address" data-field-label="Email" data-field-name="email" data-field-id="1" data-input-name="email" data-is-custom-field="false" data-font-color="#000000" data-border-color="#ffffff"><input class="engage-input" name="email" placeholder="Email Address" type="text"></div></div><div hidden data-anchor="add-component" class="engage-add"><div class="engage-custom-fields"><div class="engage-flex"><div class="engage-flex-auto"></div><div class="engage-form-add">+</div><div class="engage-flex-auto"></div></div></div></div><div class="engage-submit mt-comp mt-comp-button" data-anchor="submit"><a href="">REGISTER</a></div><div class="engage-disclaimer mt-comp-group mt-comp mt-comp-text">We respect your privacy. Unsubscribe at anytime.</div></div></div><div class="engage-column"><div class="engage-preheader mt-comp mt-comp-text"><h1 class="mt-comp-text-content">LIVE WORKSHOP</h1></div><div class="engage-header mt-comp mt-comp-text"><h2 class="mt-comp-text-content">How to get 1,000 email subscribers in 3 months</h2></div><div class="engage-sub-header mt-comp mt-comp-text"><p class="mt-comp-text-content">Join us for this live webinar.</p></div><hr class="engage-hr"><div class="engage-text-title mt-comp mt-comp-text"><h1 class="mt-comp-text-content">Here is what you'll learn:</h1></div><div class="engage-text-content-wrapper"><div class="mt-comp-group mt-comp mt-comp-text"><p class="mt-comp-text-content">In this webinar you'll learn:</p></div><ul class="engage-ul"><li class="mt-comp-group mt-comp mt-comp-text"><span class="mt-comp-text-content">How to get your first 100 subscribers.</span></li><li class="mt-comp-group mt-comp mt-comp-text"><span class="mt-comp-text-content">How to choose a topic for your blog.</span></li><li class="mt-comp-group mt-comp mt-comp-text"><span class="mt-comp-text-content">Crafting the perfect landing page for your audience.</span></li><li class="mt-comp-group mt-comp mt-comp-text"><span class="mt-comp-text-content">Using social media to drive email subscribers.</span></li></ul><div class="mt-comp-group mt-comp mt-comp-text"><p class="mt-comp-text-content">Sign up today to make sure you don't miss it.</p></div></div><div class="engage-powered-by-engage-container mt-comp-group mt-comp mt-comp-image"><a href="https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form" class="engage-powered-by-engage" target="_blank" rel="noopener noreferrer"><img class="engage-logo" src="./images/landingPage-2-logo.png" alt=""></a></div></div></div></div></div><!-- 以下是隐藏的组件模版  --><div hidden data-templates><!-- Checkbox 组件的选项 --><div data-template-type="component-checkbox-option"><input class="engage-checkbox-input" type="checkbox" name="" id=""> <label class="engage-checkbox-label" for="" data-placeholder-option></label></div><!-- Dropdown 组件的选项 --><option value="First choice" data-anchor="option" data-template-type="component-dropdown-option" data-placeholder-option></option><!-- 一般的带图标的 Link 组件 --><div data-template-type="component-link" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="" data-url=""><img data-anchor="icon" src="" alt=""><div data-anchor="title"></div></div></div><!-- 不带图标的 Link 组件 --><div data-template-type="component-link-without-icon" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="https://" data-url=""><div data-anchor="title">https://</div></div></div><!-- Input 组件 --><div class="mt-comp-group mt-comp-group-x engage-field-wrapper" data-template-type="component-input"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Untitled" data-field-label="" data-field-name="" data-field-id="" data-input-name="" data-is-custom-field="true" data-font-color="#000000" data-border-color="#ffffff"><input class="engage-input" name="" placeholder="Untitled" type="text"></div></div><!-- Dropdown 组件 --><div class="mt-comp-group mt-comp-group-x engage-field-wrapper" data-template-type="component-dropdown"><div class="engage-field engage-select-wrapper mt-comp-x mt-comp-dropdown" data-title="Select a choice" data-field-name="08b8c75b-e033-45cb-9773-d6479e50d849" data-field-label="anchor" data-field-id="55" data-is-custom-field="true" data-options='[["First choice", "ddd"], ["Second choice", "bar"], ["Third choice", "foo"]]' data-font-color="#000000" data-border-color="#ffffff"><select name="08b8c75b-e033-45cb-9773-d6479e50d849" class="engage-border-wrapper engage-select"><option value="" selected="" disabled="" hidden="" data-anchor="title">Select a choice</option></select></div></div><!-- Checkbox 组件 --><div class="mt-comp-group mt-comp-group-x engage-select-group engage-field-wrapper" data-template-type="component-checkbox"><div class="mt-comp-x mt-comp-checkbox" data-title="Check all that apply" data-input-name="" data-options='[["First choice", "0", ""], ["Second choice", "0", ""], ["Third choice", "0", ""]]' data-font-color="#000000" data-border-color="#ffffff"><div data-anchor="title" class="engage-legend">Check all that apply</div><div data-anchor="options"></div></div></div></div></body></html>

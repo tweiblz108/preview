@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Form Template</title></head><body><!-- 基本的样式 --><style data-style-basic>div[data-contents] {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+[data-anchor="video-container"]>iframe {
+  width: 100%;
+}</style><!-- 这里的样式会被编辑器替换，用于改变每一个 input 框内的 placeholder 的颜色 --><style data-style-placeholder>input[name="6298ac92-0d2a-4d2e-b908-7a294414bab1"]::placeholder {
+  color: blue;
+}</style><!-- Current Template Styles--><style template-style>blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: inherit;
+}
+
+input::placeholder {
+  color: #697177;
+}
+
+.engage-wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.engage-full {
+  display: flex;
+  flex-direction: column;
+  min-height: 680px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.engage-background {
+  min-height: 680px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-image: url("./images/form-2-background.png");
+}
+
+.engage-column {
+  max-width: 420px;
+  min-height: 680px;
+  padding: 45px;
+  background: linear-gradient(180deg, #2E2E2E12 0%, #2E2E2ED4 64.06%, #2E2E2E 88.54%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.engage-header {
+  margin-bottom: 16px;
+  margin-top: 0;
+  max-width: 400px;
+}
+
+.engage-header h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 36px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.engage-sub-header {
+  max-width: 570px;
+  margin-bottom: 36px;
+}
+
+.engage-sub-header p {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.engage-fields {
+  max-width: 380px;
+}
+
+.engage-field {
+  margin: 0 0 10px 0;
+  user-select: none;
+  position: relative;
+  -webkit-tap-highlight-color: #000000;
+  touch-action: manipulation;
+}
+
+.engage-border-wrapper {
+  border: 1px solid #1b1b1b;
+}
+
+.engage-input {
+  color: #697177;
+  font-weight: 400;
+  background-color: #1b1b1b;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  padding: 14px 0;
+  text-indent: 15px;
+  width: 100%;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  margin: 0;
+  transition: border-color ease-out 300ms;
+}
+
+.engage-submit {
+  background-color: #f57148;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 15px;
+  border: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.engage-submit a {
+  color: #FFFFFF;
+  display: block;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+.engage-submit a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.engage-disclaimer {
+  outline: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: #cbcbcb;
+  font-size: 13px;
+  margin-top: 10px;
+  max-width: 400px;
+}
+
+.engage-powered-by-engage-container {
+  margin-bottom: 0;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.engage-powered-by-engage-container:hover {
+  transform: scale(1.025) perspective(1px);
+  opacity: 1;
+}
+
+.engage-powered-by-engage {
+  background-color: transparent;
+  border-color: transparent;
+  align-items: center;
+  border-radius: 4px;
+  color: #373f45;
+  cursor: pointer;
+  display: block;
+  opacity: 0.95;
+  padding: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-indent: 100%;
+  -webkit-transition: ease-in-out all 200ms;
+  transition: ease-in-out all 200ms;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.engage-logo {
+  width: 170px;
+  height: 37px;
+  float: left;
+}
+
+.engage-custom-fields {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.engage-flex {
+  display: flex;
+  align-items: center;
+}
+
+.engage-flex-auto {
+  flex: 1 1 auto;
+  border-bottom: 1px solid #d2d8dd;
+}
+
+.engage-form-add {
+  color: #d2d8dd;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid #d2d8dd;
+  margin: 0 10px;
+}
+
+.engage-form-add:hover {
+  color: #697177;
+  border-color: #697177;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.engage-select-group {
+  margin-bottom: 10px;
+}
+
+.engage-select-wrapper {
+  border: none;
+}
+
+.engage-select-wrapper::before {
+  content: "";
+  top: calc(50% - 2.5px);
+  right: 10px;
+  position: absolute;
+  pointer-events: none;
+  border-color: #4f4f4f transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  height: 0;
+  width: 0;
+}
+
+.engage-select {
+  color: #697177;
+  font-weight: 400;
+  background-color: #1b1b1b;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
+  cursor: pointer;
+  line-height: 1.4;
+  margin-bottom: 0;
+  padding: 12px 25px 12px 0;
+  text-indent: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 15px;
+}
+
+.engage-legend {
+  border: none;
+  font-size: 17px;
+  padding: 0;
+  position: relative;
+  display: table;
+}
+
+/* 样式最好不要依赖于 data-anchor 属性  */
+.engage-checkbox-input {
+  display: none;
+  cursor: pointer;
+  margin: 4px 0 0;
+}
+
+.engage-checkbox-input:checked+label::before {
+  background: #10bf7a;
+  border-color: #10bf7a;
+}
+
+.engage-checkbox-input:checked+label::after {
+  content: "";
+  height: 4px;
+  width: 8px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+.engage-checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 28px;
+  margin: 15px 0;
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.engage-checkbox-label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #e3e3e3;
+  background: #ffffff;
+  left: 0px;
+  position: absolute;
+  content: "";
+  display: inline-block;
+}</style><div data-contents><div class="engage-wrapper"><div class="engage-full"><div class="engage-background mt-comp-group mt-comp-group-bg"><div class="engage-column"><div class="engage-header mt-comp-group mt-comp mt-comp-text"><h2 class="mt-comp-text-content">Join the waitlit</h2></div><div class="engage-sub-header mt-comp-group mt-comp mt-comp-text"><p class="mt-comp-text-content">Subscribe below and we’ll notify you when the product is released.</p></div><div class="engage-fields"><div class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Email Address" data-field-label="Email" data-field-name="email" data-field-id="1" data-input-name="email" data-is-custom-field="false" data-font-color="#697177" data-border-color="#1b1b1b"><input class="engage-input" name="email" placeholder="Email Address" type="text"></div></div><div hidden data-anchor="add-component"><div class="engage-custom-fields"><div class="engage-flex"><div class="engage-flex-auto"></div><div class="engage-form-add">+</div><div class="engage-flex-auto"></div></div></div></div><div class="engage-submit mt-comp mt-comp-button" data-anchor="submit"><a href="">Download</a></div></div><div class="engage-disclaimer mt-comp-group mt-comp mt-comp-text">We respect your privacy. Unsubscribe at anytime.</div><div class="engage-powered-by-engage-container mt-comp-group mt-comp mt-comp-image"><a href="https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form" class="engage-powered-by-engage" target="_blank" rel="noopener noreferrer"><img class="engage-logo" src="./images/form-2-logo.png" alt=""></a></div></div></div></div></div></div><!-- 以下是隐藏的组件模版  --><div hidden data-templates><!-- Checkbox 组件的选项 --><div data-template-type="component-checkbox-option"><input class="engage-checkbox-input" type="checkbox" name="" id=""> <label class="engage-checkbox-label" for="" data-placeholder-option></label></div><!-- Dropdown 组件的选项 --><option value="First choice" data-anchor="option" data-template-type="component-dropdown-option" data-placeholder-option></option><!-- 一般的带图标的 Link 组件 --><div data-template-type="component-link" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="" data-url=""><img data-anchor="icon" src="" alt=""><div data-anchor="title"></div></div></div><!-- 不带图标的 Link 组件 --><div data-template-type="component-link-without-icon" class="mt-comp-group mt-comp-group-x"><div class="mt-comp-x mt-comp-link" data-icon="" data-title="https://" data-url=""><div data-anchor="title">https://</div></div></div><!-- Input 组件 --><div class="mt-comp-group mt-comp-group-x" data-template-type="component-input"><div class="mt-comp-x mt-comp-input engage-field engage-border-wrapper" data-title="Untitled" data-field-label="" data-field-name="" data-field-id="" data-input-name="" data-is-custom-field="true" data-font-color="#697177" data-border-color="#1b1b1b"><input class="engage-input" name="" placeholder="Untitled" type="text"></div></div><!-- Dropdown 组件 --><div class="mt-comp-group mt-comp-group-x" data-template-type="component-dropdown"><div class="engage-field engage-select-wrapper mt-comp-x mt-comp-dropdown" data-title="Select a choice" data-field-name="08b8c75b-e033-45cb-9773-d6479e50d849" data-field-label="anchor" data-field-id="55" data-is-custom-field="true" data-options='[["First choice", "ddd"], ["Second choice", "bar"], ["Third choice", "foo"]]' data-font-color="#697177" data-border-color="#1b1b1b"><select name="08b8c75b-e033-45cb-9773-d6479e50d849" class="engage-border-wrapper engage-select"><option value="" selected="" disabled="" hidden="" data-anchor="title">Select a choice</option></select></div></div><!-- Checkbox 组件 --><div class="mt-comp-group mt-comp-group-x engage-select-group" data-template-type="component-checkbox"><div class="mt-comp-x mt-comp-checkbox" data-title="Check all that apply" data-input-name="" data-options='[["First choice", "0", ""], ["Second choice", "0", ""], ["Third choice", "0", ""]]' data-font-color="#FFFFFF" data-border-color="#1b1b1b"><div data-anchor="title" class="engage-legend">Check all that apply</div><div data-anchor="options"></div></div></div></div></body></html>
